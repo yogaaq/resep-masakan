@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Masakan - Beranda</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #007BFF;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        nav {
+            background-color: #343a40;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #575757;
+            color: white;
+        }
+        .container {
+            padding: 20px;
+        }
+        .intro {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .recipes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .recipe {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 10px;
+            width: calc(33% - 40px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .recipe img {
+            max-width: 100%;
+            border-radius: 5px 5px 0 0;
+        }
+        .recipe h3 {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+        .recipe p {
+            margin: 0;
+        }
+        @media (max-width: 768px) {
+            .recipe {
+                width: calc(50% - 40px);
+            }
+        }
+        @media (max-width: 480px) {
+            .recipe {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang di Resep Masakan</h1>
+    </header>
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="Aneka Resep.html">Kategori</a>
+        <a href="Tentang Kami.html">Tentang Kami</a>
+        <a href="Kontak Kami.html">Kontak Kami</a>
+    </nav>
+    <div class="container">
+        <div class="intro">
+            <h2>Berbagai Resep Masakan Lezat</h2>
+            <p>Temukan inspirasi masakan sehari-hari Anda di sini!</p>
+        </div>
+        <div class="recipes">
+            <div class="recipe">
+                <img src="nasgor.jpg" alt="Nasi Goreng">
+                <h3>Nasi Goreng</h3>
+                <p>Resep nasi goreng yang mudah dan lezat.</p>
+                <a href="Aneka Resep 2.html">Lihat Resep</a>
+            </div>
+            <div class="recipe">
+                <img src="Spaghetti.jpeg" alt="Spaghetti Bolognese">
+                <h3>Spaghetti Bolognese</h3>
+                <p>Spaghetti dengan saus bolognese yang kaya rasa.</p>
+                <a href="Aneka Resep 5.html">Lihat Resep</a>
+            </div>
+            <div class="recipe">
+                <img src="sushi.jpg" alt="Sushi">
+                <h3>Sushi</h3>
+                <p>Sushi segar dengan berbagai isian lezat.</p>
+                <a href="Aneka Resep 4.html">Lihat Resep</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Resep Masakan. Yoga Prima Aditama.</p>
+    </footer>
+</body>
+</html>
